@@ -3,24 +3,24 @@
 This repository provides a template for automated Databricks CI/CD pipeline creation and deployment.
 
 ## Table of Contents
-* [Databricks Labs CI/CD Templates](#databricks-labs-cicd-templates)
-    * [Table of Contents](#table-of-contents)
-    * [CLI example](#cli-example)
-    * [Sample project structure (with GitHub Actions)](#sample-project-structure-with-github-actions)
-    * [Sample project structure (with Azure DevOps)](#sample-project-structure-with-azure-devops)
-    * [Sample project structure (with GitLab)](#sample-project-structure-with-gitlab)
-    * [Quickstart](#quickstart)
-        * [Local steps](#local-steps)
-        * [Setting up CI/CD pipeline on GitHub Actions](#setting-up-cicd-pipeline-on-github-actions)
-        * [Setting up CI/CD pipeline on Azure DevOps](#setting-up-cicd-pipeline-on-azure-devops)
-        * [Setting up CI/CD pipeline on Gitlab](#setting-up-cicd-pipeline-on-gitlab)
-    * [Deployment file structure](#deployment-file-structure)
-    * [Troubleshooting](#troubleshooting)
-    * [FAQ](#faq)
-    * [Legal Information](#legal-information)
-    * [Feedback](#feedback)
-    * [Contributing](#contributing)
-    * [Kudos](#kudos)
+- [Databricks Labs CI/CD Templates](#databricks-labs-cicd-templates)
+  - [Table of Contents](#table-of-contents)
+  - [CLI example](#cli-example)
+  - [Sample project structure (with GitHub Actions)](#sample-project-structure-with-github-actions)
+  - [Sample project structure (with Azure DevOps)](#sample-project-structure-with-azure-devops)
+  - [Sample project structure (with GitLab)](#sample-project-structure-with-gitlab)
+  - [Quickstart](#quickstart)
+    - [Local steps](#local-steps)
+    - [Setting up CI/CD pipeline on GitHub Actions](#setting-up-cicd-pipeline-on-github-actions)
+    - [Setting up CI/CD pipeline on Azure DevOps](#setting-up-cicd-pipeline-on-azure-devops)
+    - [Setting up CI/CD pipeline on Gitlab](#setting-up-cicd-pipeline-on-gitlab)
+  - [Deployment file structure](#deployment-file-structure)
+  - [Troubleshooting](#troubleshooting)
+  - [FAQ](#faq)
+  - [Legal Information](#legal-information)
+  - [Feedback](#feedback)
+  - [Contributing](#contributing)
+  - [Kudos](#kudos)
 
 
 
@@ -270,9 +270,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 What could be causing it and what is the potential fix?
 
 *A*:  
-```
-We've seen this exception when in the profile the ```host=https://{domain}/?o={orgid}``` format is used for Azure. It is valid for the databricks cli, but not for the API. If that's the casue, once the "?o={orgid}" suffix is removed, the problem should be gone.
-```
+We've seen this exception when in the profile the ```host=https://{domain}/?o={orgid}``` format is used for Azure. It is valid for the databricks cli, but not for the API. If that's the cause, once the "?o={orgid}" suffix is removed, the problem should be gone.
 
 ## FAQ
 
